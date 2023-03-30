@@ -7,8 +7,8 @@ function isPalindrome(word) {
     } else { return true; }
   } 
 }
-console.log(isPalindrome("racecar"))
-console.log(isPalindrome("horse"))
+// console.log(isPalindrome("racecar"))
+// console.log(isPalindrome("mom"))
 /* 
   Add your pseudocode here
   first put all words to lowercase
@@ -20,4 +20,16 @@ console.log(isPalindrome("horse"))
   Add written explanation of your solution here
   I pass a for loop to loop my string from both ends to see if they match at any way.
 */
+
+// You can run `node index.js` to view these console logs
+if (require.main === module) {
+  // add your own custom tests in here
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("racecar"));
+
+  console.log("");
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("robot"));
+}
 
